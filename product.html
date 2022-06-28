@@ -95,28 +95,18 @@
             </div>  <!--dropdown for price and size-->
             <hr>
             <br>
-            <!--  Here too you can just br here like this for better readability instead of putting them in rows and columns like below which is not neccssary and messy. you could've also br in using just a row instead of putting them in column which is making the code longer than neccessary but anyway that would still be unnecessary as well. Recall that br is block element so you don't need anything for that, not even row. Hope that make sense.
-            <div class="row">
-                <div class="col">
-                    <br>
+            <div class="row" id="list-products">
+              <!-- <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
-                <div class="col">
-                    <br>
-                </div>
-                <div class="col">
-                    <br>
-                </div>
-                <div class="col">
-                    <br>
-                </div>
-                <div class="col">
-                    <br>
-                </div>
-                <div class="col">
-                    <br>
-                </div>
-            </div>  -->
-
+              </div> -->
+            </div>  <!--list-products row-->
             <div class="row">
               <div class="col">
                 <img src=".\resources\images\kid1.jpg">
@@ -180,6 +170,31 @@
               </div>
             </div>  <!--products row-->
         </div>  <!--container-->
+        <div class="container-fluid text-light mt-3" style="background-image: url('resources/images/landscape/burgess-milner-OYYE4g-I5ZQ-unsplash.jpg'); background-size: cover;">
+          <div class="row justify-content-center">
+            <div class="col-6 pt-3 pb-3 bg-secondary" style="--bs-bg-opacity: .75">
+              <form class="productForm">
+                <div class="mb-3">
+                  <label for="productName" class="form-label">Product Name</label>
+                  <input type="text" class="form-control" id="productName" placeholder="Enter Product Name">
+                </div>
+                <div class="mb-3">
+                  <label for="productDescription" class="form-label">Product Description</label>
+                  <input type="text" class="form-control" id="productDescription" placeholder="Enter Product Description">
+                </div>
+                <div class="mb-3">
+                  <label for="productImg" class="form-label">Image</label>
+                  <input type="text" class="form-control" id="productImg" placeholder="Add Image">
+                </div>
+                <!-- <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="productCheck">
+                  <label class="form-check-label" for="productCheck">Confirm</label>
+                </div> -->
+                <button type="submit" class="btn btn-primary addProductBtn">Add Product</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
     </main>
     
@@ -188,6 +203,9 @@
 
     </footer>
     
+    <!-- <script src="resources/script/productsController.js"></script> -->
+    <script type="module" src="resources/script/product-form.js"></script>
+    <!-- <script type="module" src="resources/script/products.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
