@@ -17,7 +17,7 @@ productForm.onsubmit = (event) => {
     const productImg = document.getElementById('productImg');
     
     // Run method that create object and push it in Object._products array
-    productObj.addProduct(productName.value, productDescription.value, productImg.value, 'ervgrv');
+    productObj.addProduct(productName.value, productDescription.value, productImg.value, Date());
     
     // Clear the form on event triggered
     productDescription.value = '';
